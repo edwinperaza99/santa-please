@@ -8,19 +8,31 @@ export default function LogIn() {
 					</h3>
 					<form action="/user/login" method="post">
 						<div className="mt-4">
-							<div>
-								<label className="block">Username</label>
-								<input
+						<div class="flex justify-center">
+								<div class="mb-3 xl:w-96">
+									<label for="exampleText0" class="form-label inline-block mb-2 text-white"
+									>Text input</label
+									>
+									<input
 									type="text"
-									name="username"
-									placeholder="Username"
-									className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
-									required=""
-								/>
+									class="
+										form-control
+										block
+										w-full
+										px-3
+										py-1.5
+										text-base
+										font-bold
+										text-green-900
+									"
+									id="exampleText0"
+									placeholder="Text input"
+									/>
+								</div>
 							</div>
 							<div class="flex justify-center">
 								<div class="mb-3 xl:w-96">
-									<label for="examplePassword0" class="form-label inline-block mb-2 text-gray-700">
+									<label for="examplePassword0" class="form-label inline-block mb-2 text-white">
 										Password input</label>
 									<input
 									type="password"
