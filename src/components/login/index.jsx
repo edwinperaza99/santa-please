@@ -1,4 +1,36 @@
+import { useState } from "react";
+import PocketBase from "pocketbase";
+
+const pb = new PocketBase("http://127.0.0.1:8090");
+
 export default function LogIn() {
+	const [username, setUsername] = useState("");
+	const [password, setPassword] = useState("");
+
+	const handleUsernameChange = (event) => {
+		setUsername(event.target.value);
+	};
+
+	const handlePasswordChange = (event) => {
+		setPassword(event.target.value);
+	};
+
+	async function handleSubmit(event) {
+		event.preventDefault();
+
+		const data = {
+			username: username,
+			password: password,
+			passwordConfirm: password,
+		};
+
+		try {
+			await pb.collection("users").create(data);
+			window.location.pathname = "/";
+		} catch (error) {
+			alert("couldn't create account.");
+		}
+	}
 	return (
 		<main className="bg-green-900 flex-grow">
 			<div className="flex items-center justify-center h-[calc(100vh-136px)]">
@@ -6,52 +38,29 @@ export default function LogIn() {
 					<h3 className="text-2xl font-bold text-center">
 						Log in to your account
 					</h3>
-					<form action="/user/login" method="post">
+					<form onSubmit={handleSubmit}>
 						<div className="mt-4">
-						<div class="flex justify-center">
-								<div class="mb-3 xl:w-96">
-									<label for="exampleText0" class="form-label font-bold inline-block mb-2 text-white"
-									>Username</label
-									>
-									<input
+							<div>
+								<label className="block">Username</label>
+								<input
 									type="text"
-									class="
-										form-control
-										block
-										w-full
-										px-3
-										py-1.5
-										text-base
-										font-bold
-										text-black
-										placeholder-black
-									"
-									id="exampleText0"
+									name="username"
 									placeholder="Username"
-									/>
-								</div>
+									className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
+									value={username}
+									onChange={handleUsernameChange}
+								/>
 							</div>
-							<div class="flex justify-center">
-								<div class="mb-3 xl:w-96">
-									<label for="examplePassword0" class="form-label font-bold inline-block mb-2 text-white">
-										Password</label>
-									<input
+							<div className="mt-4">
+								<label className="block">Password</label>
+								<input
 									type="password"
-									class="
-										form-control
-										block
-										w-full
-										px-3
-										py-1.5
-										text-base
-										font-bold
-										text-black
-										placeholder-black
-									"
-									id="examplePassword0"
+									name="password"
 									placeholder="Password"
-									/>
-								</div>
+									className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
+									value={password}
+									onChange={handlePasswordChange}
+								/>
 							</div>
 							<div className="flex items-baseline justify-between">
 								<button

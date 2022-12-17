@@ -1,7 +1,42 @@
+import { useState } from "react";
+import PocketBase from "pocketbase";
+
+const pb = new PocketBase("http://127.0.0.1:8090");
+
 export default function SignUp() {
-	const handleSubmit = async (event) => {
-		event.preventDefault();
+	const [username, setUsername] = useState("");
+	const [password, setPassword] = useState("");
+	const [email, setEmail] = useState("");
+
+	const handleUsernameChange = (event) => {
+		setUsername(event.target.value);
 	};
+
+	const handlePasswordChange = (event) => {
+		setPassword(event.target.value);
+	};
+
+	const handleEmailChange = (event) => {
+		setEmail(event.target.value);
+	};
+
+	async function handleSubmit(event) {
+		event.preventDefault();
+
+		const data = {
+			username: username,
+			email: email,
+			password: password,
+			passwordConfirm: password,
+		};
+
+		try {
+			await pb.collection("users").create(data);
+			window.location.pathname = "/LogIn";
+		} catch (error) {
+			alert("couldn't create account.");
+		}
+	}
 	return (
 		<main class="bg-green-900 flex-grow">
 			<div class="flex items-center justify-center h-[calc(100vh-136px)]">
@@ -11,74 +46,38 @@ export default function SignUp() {
 					</h2>
 					<form onSubmit={handleSubmit}>
 						<div class="mt-4">
-							<div class="flex justify-center">
-								<div class="mb-3 xl:w-96">
-									<label for="exampleText0" class="form-label font-bold inline-block mb-2 text-white"
-									>Username</label
-									>
-									<input
+							<div class="mt-4">
+								<label class="block">Username</label>
+								<input
 									type="text"
-									class="
-										form-control
-										block
-										w-full
-										px-3
-										py-1.5
-										text-base
-										font-bold
-										text-black
-										placeholder-black
-									"
-									id="exampleText0"
+									name="username"
 									placeholder="Username"
-									/>
-								</div>
+									class="w-full text-black px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
+									value={username}
+									onChange={handleUsernameChange}
+								/>
 							</div>
-							<div class="flex justify-center">
-								<div class="mb-3 xl:w-96">
-									<label for="exampleEmail0" class="form-label font-bold inline-block mb-2 text-white"
-									>Email</label
-									>
-									<input
+							<div class="mt-4">
+								<label class="block">Email</label>
+								<input
 									type="email"
-									class="
-										form-control
-										block
-										w-full
-										px-3
-										py-1.5
-										text-base
-										font-bold
-										text-black
-										placeholder-black
-									"
-									id="exampleEmail0"
+									name="email"
 									placeholder="Email"
-									/>
-								</div>
+									class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
+									value={email}
+									onChange={handleEmailChange}
+								/>
 							</div>
-							<div class="flex justify-center">
-								<div class="mb-3 xl:w-96">
-									<label for="Password" class="form-label font-bold inline-block mb-2 text-white"
-									>Password</label
-									>
-									<input
-									type="text"
-									class="
-										form-control
-										block
-										w-full
-										px-3
-										py-1.5
-										text-base
-										font-bold
-										text-black
-										placeholder-black
-									"
-									id="Password"
+							<div class="mt-4">
+								<label class="block">Password</label>
+								<input
+									type="password"
+									name="password"
 									placeholder="Password"
-									/>
-								</div>
+									class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
+									value={password}
+									onChange={handlePasswordChange}
+								/>
 							</div>
 							<div class="flex items-baseline justify-between">
 								<button
