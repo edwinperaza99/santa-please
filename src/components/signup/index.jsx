@@ -36,7 +36,7 @@ export default function SignUp() {
 							</div>
 							<div class="flex justify-center">
 								<div class="mb-3 xl:w-96">
-									<label for="exampleEmail0" class="form-label inline-block mb-2 text-white"
+									<label for="exampleEmail0" class="form-label font-bold inline-block mb-2 text-white"
 									>Email</label
 									>
 									<input
@@ -57,16 +57,28 @@ export default function SignUp() {
 									/>
 								</div>
 							</div>
-							<div class="mt-4">
-								<label class="block">Password</label>
-								<input
-									type="password"
-									name="password"
+							<div class="flex justify-center">
+								<div class="mb-3 xl:w-96">
+									<label for="Password" class="form-label font-bold inline-block mb-2 text-white"
+									>Password</label
+									>
+									<input
+									type="text"
+									class="
+										form-control
+										block
+										w-full
+										px-3
+										py-1.5
+										text-base
+										font-bold
+										text-black
+										placeholder-black
+									"
+									id="Password"
 									placeholder="Password"
-									class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
-									value=""
-									onChange=""
-								/>
+									/>
+								</div>
 							</div>
 							<div class="flex items-baseline justify-between">
 								<button
