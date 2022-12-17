@@ -1,6 +1,6 @@
 # Santa, Please!
 
-## A Wishlist webapp for the holidays
+## Wishlist webapp for the holidays
 
 Santa, Please! Allows you to create wishlists with your favorite
 products. You can submit your wishlist to your loved ones (in
