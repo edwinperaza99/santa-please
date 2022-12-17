@@ -1,4 +1,19 @@
-# Getting Started with Create React App
+# Santa, Please!
+
+## Wishlist webapp for the holidays
+
+Santa, Please! Allows you to create wishlists with your favorite
+products. You can submit your wishlist to your loved ones (in
+the hopes to receive a present)
+
+## Group 8
+
+- Nathan Kim
+- Edwin Peraza
+- Ethan Ton
+- Marl Rico
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
