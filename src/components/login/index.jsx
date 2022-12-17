@@ -10,7 +10,7 @@ export default function LogIn() {
 						<div className="mt-4">
 						<div class="flex justify-center">
 								<div class="mb-3 xl:w-96">
-									<label for="exampleText0" class="form-label inline-block mb-2 text-white"
+									<label for="exampleText0" class="form-label font-bold inline-block mb-2 text-white"
 									>Text input</label
 									>
 									<input
@@ -24,6 +24,7 @@ export default function LogIn() {
 										text-base
 										font-bold
 										text-green-900
+										placeholder-black
 									"
 									id="exampleText0"
 									placeholder="Text input"
@@ -32,7 +33,7 @@ export default function LogIn() {
 							</div>
 							<div class="flex justify-center">
 								<div class="mb-3 xl:w-96">
-									<label for="examplePassword0" class="form-label inline-block mb-2 text-white">
+									<label for="examplePassword0" class="form-label font-bold inline-block mb-2 text-white">
 										Password input</label>
 									<input
 									type="password"
