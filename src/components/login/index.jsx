@@ -18,15 +18,27 @@ export default function LogIn() {
 									required=""
 								/>
 							</div>
-							<div className="mt-4">
-								<label className="block">Password</label>
-								<input
+							<div class="flex justify-center">
+								<div class="mb-3 xl:w-96">
+									<label for="examplePassword0" class="form-label inline-block mb-2 text-gray-700">
+										Password input</label>
+									<input
 									type="password"
-									name="password"
-									placeholder="Password"
-									className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
-									required=""
-								/>
+									class="
+										form-control
+										block
+										w-full
+										px-3
+										py-1.5
+										text-base
+										font-bold
+										text-green-900
+										placeholder-black
+									"
+									id="examplePassword0"
+									placeholder="Password input"
+									/>
+								</div>
 							</div>
 							<div className="flex items-baseline justify-between">
 								<button
