@@ -1,7 +1,49 @@
+import { useState } from "react";
+import PocketBase from "pocketbase";
+
+const pb = new PocketBase("http://127.0.0.1:8090");
+
 export default function SignUp() {
-	const handleSubmit = async (event) => {
-		event.preventDefault();
+	const [username, setUsername] = useState("");
+	const [password, setPassword] = useState("");
+	const [email, setEmail] = useState("");
+
+	const handleUsernameChange = (event) => {
+		setUsername(event.target.value);
 	};
+
+	const handlePasswordChange = (event) => {
+		setPassword(event.target.value);
+	};
+
+	const handleEmailChange = (event) => {
+		setEmail(event.target.value);
+	};
+
+	async function handleSubmit(event) {
+		event.preventDefault();
+
+		const data = {
+			username: username,
+			email: email,
+			password: password,
+			passwordConfirm: password,
+		};
+
+		try {
+			await pb.collection("users").create(data);
+			window.location.pathname = "/LogIn";
+		} catch (error) {
+			alert("couldn't create account.");
+		}
+		// pb.createUser({ username, password })
+		// 	.then((user) => {
+		// 		console.log(`Successfully created user: ${user.username}`);
+		// 	})
+		// 	.catch((error) => {
+		// 		console.error(error);
+		// 	});
+	}
 	return (
 		<main class="bg-green-900 flex-grow">
 			<div class="flex items-center justify-center h-[calc(100vh-136px)]">
@@ -18,8 +60,8 @@ export default function SignUp() {
 									name="username"
 									placeholder="Username"
 									class="w-full text-black px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
-									// value={email}
-									// onChange=""
+									value={username}
+									onChange={handleUsernameChange}
 								/>
 							</div>
 							<div class="mt-4">
@@ -29,8 +71,8 @@ export default function SignUp() {
 									name="email"
 									placeholder="Email"
 									class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
-									value=""
-									onChange=""
+									value={email}
+									onChange={handleEmailChange}
 								/>
 							</div>
 							<div class="mt-4">
@@ -40,8 +82,8 @@ export default function SignUp() {
 									name="password"
 									placeholder="Password"
 									class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
-									value=""
-									onChange=""
+									value={password}
+									onChange={handlePasswordChange}
 								/>
 							</div>
 							<div class="flex items-baseline justify-between">

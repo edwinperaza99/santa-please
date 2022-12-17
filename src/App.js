@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import About from "./components/about";
 import Main from "./components/main";
 import SignUp from "./components/signup";
