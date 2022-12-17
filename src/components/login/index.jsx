@@ -1,4 +1,36 @@
+import { useState } from "react";
+import PocketBase from "pocketbase";
+
+const pb = new PocketBase("http://127.0.0.1:8090");
+
 export default function LogIn() {
+	const [username, setUsername] = useState("");
+	const [password, setPassword] = useState("");
+
+	const handleUsernameChange = (event) => {
+		setUsername(event.target.value);
+	};
+
+	const handlePasswordChange = (event) => {
+		setPassword(event.target.value);
+	};
+
+	async function handleSubmit(event) {
+		event.preventDefault();
+
+		const data = {
+			username: username,
+			password: password,
+			passwordConfirm: password,
+		};
+
+		try {
+			await pb.collection("users").create(data);
+			window.location.pathname = "/";
+		} catch (error) {
+			alert("couldn't create account.");
+		}
+	}
 	return (
 		<main className="bg-green-900 flex-grow">
 			<div className="flex items-center justify-center h-[calc(100vh-136px)]">
@@ -6,7 +38,7 @@ export default function LogIn() {
 					<h3 className="text-2xl font-bold text-center">
 						Log in to your account
 					</h3>
-					<form action="/user/login" method="post">
+					<form onSubmit={handleSubmit}>
 						<div className="mt-4">
 							<div>
 								<label className="block">Username</label>
@@ -15,7 +47,8 @@ export default function LogIn() {
 									name="username"
 									placeholder="Username"
 									className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
-									required=""
+									value={username}
+									onChange={handleUsernameChange}
 								/>
 							</div>
 							<div className="mt-4">
@@ -25,7 +58,8 @@ export default function LogIn() {
 									name="password"
 									placeholder="Password"
 									className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
-									required=""
+									value={password}
+									onChange={handlePasswordChange}
 								/>
 							</div>
 							<div className="flex items-baseline justify-between">

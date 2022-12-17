@@ -36,13 +36,6 @@ export default function SignUp() {
 		} catch (error) {
 			alert("couldn't create account.");
 		}
-		// pb.createUser({ username, password })
-		// 	.then((user) => {
-		// 		console.log(`Successfully created user: ${user.username}`);
-		// 	})
-		// 	.catch((error) => {
-		// 		console.error(error);
-		// 	});
 	}
 	return (
 		<main class="bg-green-900 flex-grow">
