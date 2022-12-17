@@ -2,6 +2,10 @@
 
 ## A Wishlist webapp for the holidays
 
+Santa, Please! Allows you to create wishlists with your favorite
+products. You can submit your wishlist to your loved ones (in
+the hopes to receive a present)
+
 ## Group 8
 
 - Nathan Kim
