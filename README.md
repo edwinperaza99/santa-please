@@ -1,4 +1,15 @@
-# Getting Started with Create React App
+# Santa, Please!
+
+## A Wishlist webapp for the holidays
+
+## Group 8
+
+- Nathan Kim
+- Edwin Peraza
+- Ethan Ton
+- Marl Rico
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
