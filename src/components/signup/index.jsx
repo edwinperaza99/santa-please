@@ -11,27 +11,51 @@ export default function SignUp() {
 					</h2>
 					<form onSubmit={handleSubmit}>
 						<div class="mt-4">
-							<div class="mt-4">
-								<label class="block">Username</label>
-								<input
+							<div class="flex justify-center">
+								<div class="mb-3 xl:w-96">
+									<label for="exampleText0" class="form-label font-bold inline-block mb-2 text-white"
+									>Username</label
+									>
+									<input
 									type="text"
-									name="username"
+									class="
+										form-control
+										block
+										w-full
+										px-3
+										py-1.5
+										text-base
+										font-bold
+										text-black
+										placeholder-black
+									"
+									id="exampleText0"
 									placeholder="Username"
-									class="w-full text-black px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
-									// value={email}
-									// onChange=""
-								/>
+									/>
+								</div>
 							</div>
-							<div class="mt-4">
-								<label class="block">Email</label>
-								<input
+							<div class="flex justify-center">
+								<div class="mb-3 xl:w-96">
+									<label for="exampleEmail0" class="form-label inline-block mb-2 text-white"
+									>Email</label
+									>
+									<input
 									type="email"
-									name="email"
+									class="
+										form-control
+										block
+										w-full
+										px-3
+										py-1.5
+										text-base
+										font-bold
+										text-black
+										placeholder-black
+									"
+									id="exampleEmail0"
 									placeholder="Email"
-									class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600"
-									value=""
-									onChange=""
-								/>
+									/>
+								</div>
 							</div>
 							<div class="mt-4">
 								<label class="block">Password</label>

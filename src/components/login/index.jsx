@@ -11,7 +11,7 @@ export default function LogIn() {
 						<div class="flex justify-center">
 								<div class="mb-3 xl:w-96">
 									<label for="exampleText0" class="form-label font-bold inline-block mb-2 text-white"
-									>Text input</label
+									>Username</label
 									>
 									<input
 									type="text"
@@ -23,18 +23,18 @@ export default function LogIn() {
 										py-1.5
 										text-base
 										font-bold
-										text-green-900
+										text-black
 										placeholder-black
 									"
 									id="exampleText0"
-									placeholder="Text input"
+									placeholder="Username"
 									/>
 								</div>
 							</div>
 							<div class="flex justify-center">
 								<div class="mb-3 xl:w-96">
 									<label for="examplePassword0" class="form-label font-bold inline-block mb-2 text-white">
-										Password input</label>
+										Password</label>
 									<input
 									type="password"
 									class="
@@ -45,11 +45,11 @@ export default function LogIn() {
 										py-1.5
 										text-base
 										font-bold
-										text-green-900
+										text-black
 										placeholder-black
 									"
 									id="examplePassword0"
-									placeholder="Password input"
+									placeholder="Password"
 									/>
 								</div>
 							</div>
