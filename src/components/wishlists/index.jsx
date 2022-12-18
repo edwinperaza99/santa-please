@@ -20,18 +20,17 @@ export default function Wishlists() {
 		setComment(event.target.value);
 	};
 
-	async function handleSubmit(event) {
+	async function handleNewEntry(event) {
 		event.preventDefault();
 
 		const data = {
 			item: item,
-			comment: comment,
 			link: link,
+			comment: comment,
 		};
 
 		try {
 			await pb.collection("wishes").create(data);
-			window.location.pathname = "/LogIn";
 		} catch (error) {
 			alert("couldn't add item.");
 		}
@@ -43,7 +42,7 @@ export default function Wishlists() {
 					<h2 class="text-2xl font-bold text-center">
 						Add items to your wishlist here!
 					</h2>
-					<form onSubmit={handleSubmit}>
+					<form onSubmit={handleNewEntry}>
 						<div class="mt-4">
 							<div class="mt-4">
 								<label class="block">Item:</label>
