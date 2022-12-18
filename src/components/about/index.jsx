@@ -131,10 +131,10 @@ export default function About() {
                   </h1>
                 </div>
                 <p className="transition duration-200 ease-linear text-white hover:text-green-600 text-center">
-                  "Add what you did"
+                  "Visuals and Styles for the website"
                 </p>
                 <p className="text-white italic w-64 h-full transition duration-200 ease-linear hover:text-green-600 text-center text-sm">
-                  "Quotes?"
+                  "Had a fun time in this class"
                 </p>
               </div>
               <a
