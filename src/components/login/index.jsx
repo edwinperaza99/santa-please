@@ -18,17 +18,17 @@ export default function LogIn() {
 	async function handleSubmit(event) {
 		event.preventDefault();
 
-		const data = {
-			username: username,
-			password: password,
-			passwordConfirm: password,
-		};
-
 		try {
-			await pb.collection("users").create(data);
-			window.location.pathname = "/";
+			await pb.collection("users").authWithPassword(username, password);
+
+			if (pb.authStore.isValid) {
+				window.location.pathname = "/Dashboard";
+				// store these variables to use later
+				window.localStorage.setItem("username", username);
+				window.localStorage.setItem("password", password);
+			}
 		} catch (error) {
-			alert("couldn't create account.");
+			alert("couldn't log in.");
 		}
 	}
 	return (
