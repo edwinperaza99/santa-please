@@ -21,4 +21,10 @@ Use command:
 - npm start
 ```
 
-Sorry for the inconveniences, the project takes awhile to boot up, but it does load.
+Sorry for the inconveniences. The project takes awhile to boot up, but it does load.
+
+## More apologies:
+
+The project runs and you can access the different pages, create a user, log in as the user.
+When you log in you are redirected to the app dashboard. From there you can add data to
+store it in PocketBase. However, I was not able to display the data on the screen.
