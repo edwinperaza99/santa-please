@@ -30,36 +30,36 @@ export default function About() {
           </p>
         </section>
         <section className="flex flex-col gap-3 items-center justify-center lg:flex-row text-neutral-50s">
-          <div className="bg-red-700 rounded-xl border-neutral-50 border-4 border-solid p-8 flex justify-center items-center transition duration-200 ease-linear hover:scale-105 hover:border-lime-500 group">
+          <div className="bg-red-800 rounded-xl border-neutral-50 border-4 border-solid p-8 flex justify-center items-center transition duration-200 ease-linear hover:scale-105 hover:border-lime-600 border-neutral-50 group">
             <div className="flex flex-col justify-center items-center gap-10">
               <div className="flex flex-col items-center gap-6">
                 <div className="flex gap-6 items-center">
                   <img
-                    src="https://avatars.githubusercontent.com/u/89877041?v=4"
+                    src="https://avatars.githubusercontent.com/Cronchynekos"
                     alt="Natan K. github profile picture"
                     className="w-16 h-16 rounded-full transition duration-500 ease-out group-hover:rotate-180"
                   />
-                  <h1 className="text-2xl text-neutral-50 font-semibold transition duration-200 ease-linear hover:text-slate-900">
+                  <h1 className="text-2xl text-neutral-50 font-semibold transition duration-200 ease-linear hover:text-green-600">
                     Nathan Kim
                   </h1>
                 </div>
-                <p className="transition duration-200 ease-linear text-neutral-50 hover:text-slate-900 text-center">
+                <p className="transition duration-200 ease-linear text-neutral-50 hover:text-green-600 text-center">
                   "Add what you did"
                 </p>
-                <p className="text-neutral-50 italic w-64 h-full transition duration-200 ease-linear hover:text-slate-900 text-center text-sm">
+                <p className="text-neutral-50 italic w-64 h-full transition duration-200 ease-linear hover:text-green-600 text-center text-sm">
                   "Quotes?"
                 </p>
               </div>
               <a
-                href="https://github.com/"
+                href="https://github.com/Cronchynekos"
                 target="_blank"
-                className="w-64 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-slate-900 transition duration-200 rounded shadow-md bg-neutral-50 hover:bg-green-700 hover:scale-105"
+                className="w-64 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide  transition duration-200 rounded shadow-md text-neutral-50 bg-green-600 hover:bg-neutral-50 hover:text-green-600 hover:scale-105"
               >
                 GitHub Repo
               </a>
             </div>
           </div>
-          <div className="bg-red-700 rounded-xl border-neutral-50 border-4 border-solid p-8 flex justify-center items-center transition duration-200 ease-linear hover:scale-105 hover:border-lime-500 group">
+          <div className="bg-red-800 rounded-xl border-neutral-50 border-4 border-solid p-8 flex justify-center items-center transition duration-200 ease-linear hover:scale-105 hover:border-lime-600 group">
             <div className="flex flex-col justify-center items-center gap-10">
               <div className="flex flex-col items-center gap-6">
                 <div className="flex gap-6 items-center">
@@ -68,27 +68,27 @@ export default function About() {
                     alt="Edwin P. github profile picture"
                     className="w-16 h-16 rounded-full transition duration-500 ease-out group-hover:rotate-180"
                   />
-                  <h1 className="text-2xl text-neutral-50 font-semibold transition duration-200 ease-linear hover:text-slate-900">
+                  <h1 className="text-2xl text-neutral-50 font-semibold transition duration-200 ease-linear hover:text-green-600">
                     Edwin Peraza
                   </h1>
                 </div>
-                <p className="transition duration-200 ease-linear text-neutral-50 hover:text-slate-900 text-center">
+                <p className="transition duration-200 ease-linear text-neutral-50 hover:text-green-600 text-center">
                   "Add what you did"
                 </p>
-                <p className="text-neutral-50 italic w-64 h-full transition duration-200 ease-linear hover:text-slate-900 text-center text-sm">
+                <p className="text-neutral-50 italic w-64 h-full transition duration-200 ease-linear hover:text-green-600 text-center text-sm">
                   "Quotes?"
                 </p>
               </div>
               <a
                 href="https://github.com/edwinperaza99"
                 target="_blank"
-                className="w-64 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-slate-900 transition duration-200 rounded shadow-md bg-neutral-50 hover:bg-green-700 hover:scale-105"
+                className="w-64 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-neutral-50 bg-green-600 hover:bg-neutral-50 hover:text-green-600 hover:scale-105"
               >
                 GitHub Repo
               </a>
             </div>
           </div>
-          <div className="bg-red-700 rounded-xl border-neutral-50 border-4 border-solid p-8 flex justify-center items-center transition duration-200 ease-linear hover:scale-105 hover:border-lime-500 group">
+          <div className="bg-red-800 rounded-xl border-neutral-50 border-4 border-solid p-8 flex justify-center items-center transition duration-200 ease-linear hover:scale-105 hover:border-lime-600 group">
             <div className="flex flex-col justify-center items-center gap-10">
               <div className="flex flex-col items-center gap-6">
                 <div className="flex gap-6 items-center">
@@ -97,27 +97,27 @@ export default function About() {
                     alt="Marl R. github profile picture"
                     className="w-16 h-16 rounded-full transition duration-500 ease-out group-hover:rotate-180"
                   />
-                  <h1 className="text-2xl text-neutral-50 font-semibold transition duration-200 ease-linear hover:text-slate-900">
+                  <h1 className="text-2xl text-neutral-50 font-semibold transition duration-200 ease-linear hover:text-green-600">
                     Marl Rico
                   </h1>
                 </div>
-                <p className="transition duration-200 ease-linear text-neutral-50 hover:text-slate-900 text-center">
+                <p className="transition duration-200 ease-linear text-neutral-50 hover:text-green-600 text-center">
                   Created About Us Page
                 </p>
-                <p className="text-neutral-50 italic w-64 h-full transition duration-200 ease-linear hover:text-slate-900 text-center text-sm">
+                <p className="text-neutral-50 italic w-64 h-full transition duration-200 ease-linear hover:text-green-600 text-center text-sm">
                   "Santa, Please give me an A for this class"
                 </p>
               </div>
               <a
                 href="https://github.com/mrmarlrico"
                 target="_blank"
-                className="w-64 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-slate-900 transition duration-200 rounded shadow-md bg-neutral-50 hover:bg-green-700 hover:scale-105"
+                className="w-64 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-neutral-50 bg-green-600 hover:bg-neutral-50 hover:text-green-600 hover:scale-105"
               >
                 GitHub Repo
               </a>
             </div>
           </div>
-          <div className="bg-red-700 rounded-xl border-neutral-50 border-4 border-solid p-8 flex justify-center items-center transition duration-200 ease-linear hover:scale-105 hover:border-lime-500 group">
+          <div className="bg-red-800 rounded-xl border-neutral-50 border-4 border-solid p-8 flex justify-center items-center transition duration-200 ease-linear hover:scale-105 hover:border-lime-600 group">
             <div className="flex flex-col justify-center items-center gap-10">
               <div className="flex flex-col items-center gap-6">
                 <div className="flex gap-6 items-center">
@@ -126,21 +126,21 @@ export default function About() {
                     alt="Ethan T. github profile picture"
                     className="w-16 h-16 rounded-full transition duration-500 ease-out group-hover:rotate-180"
                   />
-                  <h1 className="text-2xl text-neutral-50 font-semibold transition duration-200 ease-linear hover:text-slate-900">
+                  <h1 className="text-2xl text-neutral-50 font-semibold transition duration-200 ease-linear hover:text-green-600">
                     Ethan Ton
                   </h1>
                 </div>
-                <p className="transition duration-200 ease-linear text-neutral-50 hover:text-slate-900 text-center">
+                <p className="transition duration-200 ease-linear text-neutral-50 hover:text-green-600 text-center">
                   "Add what you did"
                 </p>
-                <p className="text-neutral-50 italic w-64 h-full transition duration-200 ease-linear hover:text-slate-900 text-center text-sm">
+                <p className="text-neutral-50 italic w-64 h-full transition duration-200 ease-linear hover:text-green-600 text-center text-sm">
                   "Quotes?"
                 </p>
               </div>
               <a
                 href="https://github.com/ethanton0927"
                 target="_blank"
-                className="w-64 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-slate-900 transition duration-200 rounded shadow-md bg-neutral-50 hover:bg-green-700 hover:scale-105"
+                className="w-64 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-neutral-50 bg-green-600 hover:bg-neutral-50 hover:text-green-600 hover:scale-105"
               >
                 GitHub Repo
               </a>
