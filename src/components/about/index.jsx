@@ -134,7 +134,7 @@ export default function About() {
                   "Styles and graphics for the website"
                 </p>
                 <p className="text-neutral-50 italic w-64 h-full transition duration-200 ease-linear hover:text-slate-900 text-center text-sm">
-                  "Difficult Project"
+                  "Difficult yet fun project"
                 </p>
               </div>
               <a
