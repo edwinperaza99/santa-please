@@ -3,7 +3,7 @@ export default function About() {
     <div className="bg-green-900 h-fit lg:h-screen">
       <div className="flex-grow px-4 py-16">
         <section className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-neutral-50 sm:text-4xl md:mx-auto">
+          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
             <span className="relative inline-block">
               <svg
                 viewBox="0 0 52 24"
@@ -25,11 +25,11 @@ export default function About() {
               <span className="relative">Welcome our lovely devs</span>
             </span>
           </h2>
-          <p className="text-base text-neutral-50 md:text-lg">
+          <p className="text-base text-white md:text-lg">
             The geniuses behind Santa, Please!
           </p>
         </section>
-        <section className="flex flex-col gap-3 items-center justify-center lg:flex-row text-neutral-50s">
+        <section className="flex flex-col gap-3 items-center justify-center lg:flex-row text-whites">
           <div className="bg-red-800 rounded-xl border-neutral-50 border-4 border-solid p-8 flex justify-center items-center transition duration-200 ease-linear hover:scale-105 hover:border-lime-600 border-neutral-50 group">
             <div className="flex flex-col justify-center items-center gap-10">
               <div className="flex flex-col items-center gap-6">
@@ -39,21 +39,21 @@ export default function About() {
                     alt="Natan K. github profile picture"
                     className="w-16 h-16 rounded-full transition duration-500 ease-out group-hover:rotate-180"
                   />
-                  <h1 className="text-2xl text-neutral-50 font-semibold transition duration-200 ease-linear hover:text-green-600">
+                  <h1 className="text-2xl text-white font-semibold transition duration-200 ease-linear hover:text-green-600">
                     Nathan Kim
                   </h1>
                 </div>
-                <p className="transition duration-200 ease-linear text-neutral-50 hover:text-green-600 text-center">
+                <p className="transition duration-200 ease-linear text-white hover:text-green-600 text-center">
                   "Add what you did"
                 </p>
-                <p className="text-neutral-50 italic w-64 h-full transition duration-200 ease-linear hover:text-green-600 text-center text-sm">
+                <p className="text-white italic w-64 h-full transition duration-200 ease-linear hover:text-green-600 text-center text-sm">
                   "Quotes?"
                 </p>
               </div>
               <a
                 href="https://github.com/Cronchynekos"
                 target="_blank"
-                className="w-64 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide  transition duration-200 rounded shadow-md text-neutral-50 bg-green-600 hover:bg-neutral-50 hover:text-green-600 hover:scale-105"
+                className="w-64 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide  transition duration-200 rounded shadow-md text-white bg-green-600 hover:bg-neutral-50 hover:text-green-600 hover:scale-105"
               >
                 GitHub Repo
               </a>
@@ -68,21 +68,21 @@ export default function About() {
                     alt="Edwin P. github profile picture"
                     className="w-16 h-16 rounded-full transition duration-500 ease-out group-hover:rotate-180"
                   />
-                  <h1 className="text-2xl text-neutral-50 font-semibold transition duration-200 ease-linear hover:text-green-600">
+                  <h1 className="text-2xl text-white font-semibold transition duration-200 ease-linear hover:text-green-600">
                     Edwin Peraza
                   </h1>
                 </div>
-                <p className="transition duration-200 ease-linear text-neutral-50 hover:text-green-600 text-center">
+                <p className="transition duration-200 ease-linear text-white hover:text-green-600 text-center">
                   "Add what you did"
                 </p>
-                <p className="text-neutral-50 italic w-64 h-full transition duration-200 ease-linear hover:text-green-600 text-center text-sm">
+                <p className="text-white italic w-64 h-full transition duration-200 ease-linear hover:text-green-600 text-center text-sm">
                   "Quotes?"
                 </p>
               </div>
               <a
                 href="https://github.com/edwinperaza99"
                 target="_blank"
-                className="w-64 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-neutral-50 bg-green-600 hover:bg-neutral-50 hover:text-green-600 hover:scale-105"
+                className="w-64 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-white bg-green-600 hover:bg-neutral-50 hover:text-green-600 hover:scale-105"
               >
                 GitHub Repo
               </a>
@@ -97,21 +97,21 @@ export default function About() {
                     alt="Marl R. github profile picture"
                     className="w-16 h-16 rounded-full transition duration-500 ease-out group-hover:rotate-180"
                   />
-                  <h1 className="text-2xl text-neutral-50 font-semibold transition duration-200 ease-linear hover:text-green-600">
+                  <h1 className="text-2xl text-white font-semibold transition duration-200 ease-linear hover:text-green-600">
                     Marl Rico
                   </h1>
                 </div>
-                <p className="transition duration-200 ease-linear text-neutral-50 hover:text-green-600 text-center">
+                <p className="transition duration-200 ease-linear text-white hover:text-green-600 text-center">
                   Created About Us Page
                 </p>
-                <p className="text-neutral-50 italic w-64 h-full transition duration-200 ease-linear hover:text-green-600 text-center text-sm">
+                <p className="text-white italic w-64 h-full transition duration-200 ease-linear hover:text-green-600 text-center text-sm">
                   "Santa, Please give me an A for this class"
                 </p>
               </div>
               <a
                 href="https://github.com/mrmarlrico"
                 target="_blank"
-                className="w-64 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-neutral-50 bg-green-600 hover:bg-neutral-50 hover:text-green-600 hover:scale-105"
+                className="w-64 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-white bg-green-600 hover:bg-neutral-50 hover:text-green-600 hover:scale-105"
               >
                 GitHub Repo
               </a>
@@ -126,21 +126,21 @@ export default function About() {
                     alt="Ethan T. github profile picture"
                     className="w-16 h-16 rounded-full transition duration-500 ease-out group-hover:rotate-180"
                   />
-                  <h1 className="text-2xl text-neutral-50 font-semibold transition duration-200 ease-linear hover:text-green-600">
+                  <h1 className="text-2xl text-white font-semibold transition duration-200 ease-linear hover:text-green-600">
                     Ethan Ton
                   </h1>
                 </div>
-                <p className="transition duration-200 ease-linear text-neutral-50 hover:text-green-600 text-center">
+                <p className="transition duration-200 ease-linear text-white hover:text-green-600 text-center">
                   "Add what you did"
                 </p>
-                <p className="text-neutral-50 italic w-64 h-full transition duration-200 ease-linear hover:text-green-600 text-center text-sm">
+                <p className="text-white italic w-64 h-full transition duration-200 ease-linear hover:text-green-600 text-center text-sm">
                   "Quotes?"
                 </p>
               </div>
               <a
                 href="https://github.com/ethanton0927"
                 target="_blank"
-                className="w-64 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-neutral-50 bg-green-600 hover:bg-neutral-50 hover:text-green-600 hover:scale-105"
+                className="w-64 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md text-white bg-green-600 hover:bg-neutral-50 hover:text-green-600 hover:scale-105"
               >
                 GitHub Repo
               </a>
