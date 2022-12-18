@@ -3,6 +3,7 @@ import Main from "./components/main";
 import SignUp from "./components/signup";
 import LogIn from "./components/login";
 import Forgot from "./components/forgot";
+import Wishlists from "./components/wishlists";
 import "./App.css";
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
 			break;
 		case "/LogIn":
 			Component = LogIn;
+			break;
+		case "/Dashboard":
+			Component = Wishlists;
 			break;
 	}
 	return (
