@@ -3,7 +3,7 @@ import PocketBase from "pocketbase";
 
 const pb = new PocketBase("http://127.0.0.1:8090");
 
-const userName = pb.authStore.model.username;
+// const userName = pb.authStore.model.username;
 
 export default async function Wishes() {
 	try {

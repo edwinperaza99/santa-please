@@ -76,7 +76,7 @@ export default function About() {
 									"Add what you did"
 								</p>
 								<p className="text-white italic w-64 h-full transition duration-200 ease-linear hover:text-green-600 text-center text-sm">
-									"Quotes?"
+									"Java is to Javascript what car is to Carpet"
 								</p>
 							</div>
 							<a
@@ -131,7 +131,7 @@ export default function About() {
 									</h1>
 								</div>
 								<p className="transition duration-200 ease-linear text-white hover:text-green-600 text-center">
-									"Add what you did"
+									"I participated"
 								</p>
 								<p className="text-white italic w-64 h-full transition duration-200 ease-linear hover:text-green-600 text-center text-sm">
 									"Quotes?"

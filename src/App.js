@@ -5,6 +5,7 @@ import LogIn from "./components/login";
 import Forgot from "./components/forgot";
 import Wishlists from "./components/wishlists";
 import "./App.css";
+import Wishes from "./components/wishlists/wishes";
 
 function App() {
 	let Component;
@@ -26,6 +27,9 @@ function App() {
 			break;
 		case "/Dashboard":
 			Component = Wishlists;
+			break;
+		case "/Wishes":
+			Component = Wishes;
 			break;
 	}
 	return (
