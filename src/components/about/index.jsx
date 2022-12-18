@@ -76,7 +76,7 @@ export default function About() {
 									"Add what you did"
 								</p>
 								<p className="text-white italic w-64 h-full transition duration-200 ease-linear hover:text-green-600 text-center text-sm">
-									"Java is to Javascript what car is to Carpet"
+									"Java is to Javascript what car is to a Carpet"
 								</p>
 							</div>
 							<a
